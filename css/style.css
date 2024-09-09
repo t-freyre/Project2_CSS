@@ -1,0 +1,246 @@
+/* Body, Nav and Footer */
+
+body {
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    background-color: #223550;
+    color: #FFFFFF;
+    font: bold;
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-size: 1.25em;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+}
+
+footer {
+    background-color: #31363F;
+    border: 5px #31363F;
+    color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles the words in the footer that represent a link in the footer section */
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.splash {
+    margin: 0;
+    background-color: #FAF9F6;
+    border-color: #F7E7DC;
+}
+
+/* Splash page */
+.splash h1 {
+    margin-top: 0;
+    margin-bottom: 10;
+    margin-left: 5px;
+    padding: 10px;
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.50em;
+    background-color: #223550;
+    border-radius: 10px;
+    color: #FFFFFF;
+    /* color: #000000;
+    background-color: #F7E7DC; */
+}
+
+.splash img {
+    margin: 5px 0px 5px 25px;
+    border: 2px solid #223550;
+    padding: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #223550;
+}
+
+.address {
+    color: #000000;
+    font-size: larger;
+    margin: 5px 0px 5px 25px;
+    font-family: "Lato" sans-serif;
+}
+
+.tagline {
+    color: #000000;
+    font-size: larger;
+    font-family: "Lato" sans-serif;
+    margin-left: 25px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+hr {
+    margin: 0px 30px 0px 30px;
+    border: 3px solid #223550;
+    background-color: #FAF9F6;
+}
+
+section {
+    margin: 0;
+    padding: 25px;
+    background-color: #FAF9F6;
+}
+
+section h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #223550;
+    color: #FFFFFF;
+}
+
+.EDU_Paragraph {
+    margin: 25px 0px 5px 25px;
+    padding: 5px;
+    font-size: larger;
+    font-family: "Oswald", sans-serif;
+    color: #000000;
+}
+
+.Honors_Awards_DL {
+    margin: 25px 0px 5px 25px;
+    font-size: larger;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    gap: 10px 20px;
+}
+
+.Skills_UL {
+    margin: 25px 0px 5px 25px;
+    font-size: larger;
+    font-family: "Lato", sans-serif;
+    list-style-type: "☞   ";
+}
+
+.Lead_XP {
+    margin: 25px 0px 5px 25px;
+    font-size: larger;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    color: #000000;
+    margin: 25px 0px 5px 25px;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    gap: 10px 20px;
+}
+
+/* Links */
+a {
+    color: #345584;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #28afc3;
+}
+
+/* Contains the */
+/* .card ul {
+    margin: 0% 0px 10px 35px;
+    font-size: larger;
+    list-style-type: "❖   ";
+    /* max-height: 150px; */
+/* } */
+
+section h3 {
+    margin: 25px 0px 0px 25px;
+}
+
+.three-col {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    /* might need to change the px */
+}
+
+.card {
+    height: auto;
+    box-shadow: #31363F;
+    outline: #345584;
+    max-width: 500px;
+    /* max-height: 500; */
+    background-color: #85878a;
+    box-shadow: 0 6px 10px 0 #343333;
+    border-radius: 10px;
+    margin: 0% 0px 10px 35px;
+    font-size: larger;
+    list-style-type: "❖   ";
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px #343333;
+}
+
+@media (max-width: 768px) {
+    .three-col {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-height: 250px) {
+    section .Projects_UL {}
+}
+
+.card img {
+    margin: 5% 0px 0px 28%;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    justify-content: space-around;
+    padding: 2% 5% 0% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.one-col {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    background-color: #FAF9F6;
+}
+
+.one-col input {
+    width: 350px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.one-col textarea {
+    width: 350px;
+    border: 2px solid #000000;
+    border-radius: 5px
+}
+
+.submit:hover {
+    background-color: #7a8283;
+}
